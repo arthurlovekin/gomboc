@@ -1,4 +1,4 @@
-The popularized gomboc is not actually a gomboc, but such objects do exist. I want to find one, and 3d-print it.
+The popularized gomboc is not actually a gomboc, but such objects do exist. I want to find one and 3d-print it.
 
 Approaches:
 1. Create a solid from a collection of half-planes (convex by construction). Then use gradient descent or other optimization to move the planes until they form a gomboc.

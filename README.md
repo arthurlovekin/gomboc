@@ -2,8 +2,9 @@ The popularized gomboc is not actually a gomboc, but such objects do exist. I wa
 
 Approaches:
 1. Create a solid from a collection of half-planes (convex by construction). Then use gradient descent or other optimization to move the planes until they form a gomboc.
-2. Brute force search across parameterizations of a solid. Intuitively, I think gombocs with no symmetry or radial symmetry (like a helix) are possible, but mirror symmetry makes it impossible.
-3. Create a solid from a collection of points, each connected in triangles to their nearest neighbor. Use gradient descent or other optimization to move the points until they form a gomboc (note that convexity also has to be checked separately)
+2. Create a interactive visualization and rapid-test setup so that I can manually adjust faces and vertices, helping me build intuition and essentially allowing my own intuition to replace an optimization algorithm. Intuitively, I think gombocs with no symmetry or radial symmetry (like a helix) are possible, but mirror symmetry makes it impossible.
+3. Brute force search across parameterizations of a solid. Promising starting points can be derived from the above visualizer.
+4. Create a solid from a collection of points, each connected in triangles to their nearest neighbor. Use gradient descent or other optimization to move the points until they form a gomboc (note that convexity also has to be checked separately)
 
 Testing framework:
 The gomboc_checker takes in a stl file, and checks each face, edge, and vertex to see if a support vector through it intersects the center of mass (COM).
